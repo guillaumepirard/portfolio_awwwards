@@ -1,12 +1,17 @@
-// == Import
-import reactLogo from './react-logo.svg';
-import './styles.css';
+// COMP Import
+import FirstSlide from 'src/components/FirstSlide';
+import SecondSlide from 'src/components/SecondSlide';
+import Curtains from 'src/components/Curtains';
+
+// Style
+import './styles.scss';
 
 // == Composant
 const App = () => (
   <div className="app">
-    <img src={reactLogo} alt="react logo" />
-    <h1>Composant : App</h1>
+    <FirstSlide />
+    <SecondSlide />
+    <Curtains />
   </div>
 );
 
