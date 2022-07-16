@@ -1,0 +1,115 @@
+.firstSlide {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  &-header {
+    width: 100%;
+    flex-grow: 1.4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    font-weight: bold;
+    color: white;
+  }
+
+  &-container {
+    width: 100%;
+    flex-grow: 1;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: row;
+
+    &_left {
+      height: 100%;
+      width: 50%;
+      background-color: #ce81ff;
+      border-radius: 50px;
+      padding: 50px;
+      margin-right: 5px;
+
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+
+      &-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        p {
+          font-size: 2rem;
+          color: white;
+          font-weight: bold;
+        }
+      }
+
+      &-bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        p {
+          font-size: 2rem;
+          color: white;
+          font-weight: bold;
+        }
+      }
+    }
+
+    &_right {
+      height: 100%;
+      width: 50%;
+      margin-left: 5px;
+
+      &-top {
+        width: 100%;
+        height: 50%;
+        padding-bottom: 10px;
+
+        display: flex;
+        flex-direction: row;
+
+        &_element {
+          width: 50%;
+          height: 100%;
+          background-color: #fb7c7c;
+          border-radius: 50px;
+          padding: 50px;
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-end;
+
+          &-first {
+            margin-right: 5px;
+          }
+
+          &-second {
+            margin-left: 5px;
+          }
+
+          p {
+            font-size: 1rem;
+            color: white;
+            font-weight: bold;
+          }
+        }
+      }
+
+      &-bottom {
+        width: 100%;
+        height: 50%;
+        background-color: powderblue;
+        border-radius: 50px;
+
+        padding: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+      }
+    }
+  }
+}
